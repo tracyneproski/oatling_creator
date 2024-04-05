@@ -1,0 +1,30 @@
+/* styles.css */
+
+.attribute-selector {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.attribute-selector img {
+  cursor: pointer;
+  margin: 0 10px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.attribute-selector img:hover {
+  border-color: #007bff;
+}
+
+#avatar-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#avatar {
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 10px;
+}
