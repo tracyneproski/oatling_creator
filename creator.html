@@ -1,33 +1,73 @@
-<!-- creator.html -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Character Creator</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>OATLing Creator</title>
+    <style>
+       body, {
+          margin: 0;
+          padding: 0;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #f0f0f0; /* Change the background color if needed */
+        }
+      .title {
+        font-size: 32px;
+        text-align: center;
+        padding-top: 10%;
+      }
+      .image-container {
+          position: relative;
+          width: 500px; /* Set the width and height according to your image dimensions */
+          height: 500px;
+          margin: 50px auto; /* Adjust margin as needed */
+      }
+      .image-container img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          opacity: 100%; /* Optional: Adjust opacity if needed */
+      }
+      .button-container {
+        padding-left: 15%;
+        padding-right: 15%;
+        display: flex;
+        justify-content: space-between;
+      }
+
+    .button-container button {
+        padding: 10px;
+        flex: 1;
+        margin-right: 4%;
+      }
+
+    .button-container button:last-child {
+        margin-right: 0;
+      }
+  </style>
 </head>
 <body>
-    <div class="attribute-selector" id="face-selector">
-        <!-- Face shape options -->
+    <div class="title">
+      OATLing Creator
     </div>
-    <div class="attribute-selector" id="mouth-selector">
-        <!-- Mouth shape options -->
+    <div class="image-container">
+        <img src="https://www.billerdesigns.com/wp-content/uploads/2024/04/OATLing_Face_1.png" alt="Face_1">
+        <img src="https://www.billerdesigns.com/wp-content/uploads/2024/04/OATLing_Mouth_1.png" alt="Mouth_1">
+        <img src="https://www.billerdesigns.com/wp-content/uploads/2024/04/OATLing_Hair_1.png" alt="Hair_1">
+        <img src="https://www.billerdesigns.com/wp-content/uploads/2024/04/OATLing_Eyes_1.png" alt="Eyes_1">
+        <img src="https://www.billerdesigns.com/wp-content/uploads/2024/04/OATLing_Brows_1.png" alt="Brows_1">
+      </div>
+    <div class="button-container">
+      <button type="button">Face</button>
+      <button type="button">Mouth</button>
+      <button type="button">Hair</button>
+      <button type="button">Eyes</button>
+      <button type="button">Brows</button>
     </div>
-    <div class="attribute-selector" id="hair-selector">
-        <!-- Hair style options -->
-    </div>
-    <div class="attribute-selector" id="eyes-selector">
-        <!-- Eye shape options -->
-    </div>
-    <div class="attribute-selector" id="brows-selector">
-        <!-- Eyebrow shape options -->
-    </div>
-    <div id="avatar-container">
-        <img id="avatar" src="https://www.billerdesigns.com/wp-content/uploads/2024/04/OATLing_Face_1-OATLing_Mouth_1-OATLing_Hair_1-OATLing_Eyes_1-OATLing_Brows_1.png" alt="Avatar">
-    </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
