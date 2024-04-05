@@ -47,18 +47,71 @@
       OATLing Creator
     </div>
     <div class="image-container">
-        <img src="https://www.billerdesigns.com/wp-content/uploads/2024/04/OATLing_Face_1.png" alt="Face_1">
-        <img src="https://www.billerdesigns.com/wp-content/uploads/2024/04/OATLing_Mouth_1.png" alt="Mouth_1">
-        <img src="https://www.billerdesigns.com/wp-content/uploads/2024/04/OATLing_Hair_1.png" alt="Hair_1">
-        <img src="https://www.billerdesigns.com/wp-content/uploads/2024/04/OATLing_Eyes_1.png" alt="Eyes_1">
-        <img src="https://www.billerdesigns.com/wp-content/uploads/2024/04/OATLing_Brows_1.png" alt="Brows_1">
+        <img id="face-image" src="https://www.billerdesigns.com/wp-content/uploads/2024/04/OATLing_Face_1.png" alt="Face_1">
+        <img id="mouth-image" src="https://www.billerdesigns.com/wp-content/uploads/2024/04/OATLing_Mouth_1.png" alt="Mouth_1">
+        <img id="hair-image" src="https://www.billerdesigns.com/wp-content/uploads/2024/04/OATLing_Hair_1.png" alt="Hair_1">
+        <img id="eyes-image" src="https://www.billerdesigns.com/wp-content/uploads/2024/04/OATLing_Eyes_1.png" alt="Eyes_1">
+        <img id="brows-image" src="https://www.billerdesigns.com/wp-content/uploads/2024/04/OATLing_Brows_1.png" alt="Brows_1">
       </div>
     <div class="button-container">
-      <button type="button">Face</button>
-      <button type="button">Mouth</button>
-      <button type="button">Hair</button>
-      <button type="button">Eyes</button>
-      <button type="button">Brows</button>
+      <button type="button" onclick="toggleFaceImage()">Face</button>
+      <button type="button" onclick="toggleMouthImage()">Mouth</button>
+      <button type="button" onclick="toggleHairImage()">Hair</button>
+      <button type="button" onclick="toggleEyesImage()">Eyes</button>
+      <button type="button" onclick="toggleBrowsImage()">Brows</button>
     </div>
+
+    <script>
+      var browsImageIndex = 1;
+      function toggleBrowsImage() {
+        var image = document.getElementById('brows-image');
+        browsImageIndex++;
+        if (browsImageIndex > 4) {
+          browsImageIndex = 1;
+        }
+        image.src = 'https://www.billerdesigns.com/wp-content/uploads/2024/04/OATLing_Brows_' + browsImageIndex + '.png';
+      }
+
+      var faceImageIndex = 1;
+      function toggleFaceImage() {
+        var image = document.getElementById('face-image');
+        faceImageIndex++;
+        if (faceImageIndex > 4) {
+          faceImageIndex = 1;
+        }
+        image.src = 'https://www.billerdesigns.com/wp-content/uploads/2024/04/OATLing_Face_' + faceImageIndex + '.png';
+      }
+
+      var mouthImageIndex = 1;
+      function toggleMouthImage() {
+        var image = document.getElementById('mouth-image');
+        mouthImageIndex++;
+        if (mouthImageIndex > 4) {
+          mouthImageIndex = 1;
+        }
+        image.src = 'https://www.billerdesigns.com/wp-content/uploads/2024/04/OATLing_Mouth_' + mouthImageIndex + '.png';
+      }
+      
+      var hairImageIndex = 1;
+      function toggleHairImage() {
+        var image = document.getElementById('hair-image');
+        hairImageIndex++;
+        if (hairImageIndex > 4) {
+          hairImageIndex = 1;
+        }
+        image.src = 'https://www.billerdesigns.com/wp-content/uploads/2024/04/OATLing_Hair_' + hairImageIndex + '.png';
+      }
+
+      var eyesImageIndex = 1;
+      function toggleEyesImage() {
+        var image = document.getElementById('eyes-image');
+        eyesImageIndex++;
+        if (eyesImageIndex > 4) {
+          eyesImageIndex = 1;
+        }
+        image.src = 'https://www.billerdesigns.com/wp-content/uploads/2024/04/OATLing_Eyes_' + eyesImageIndex + '.png';
+      }
+
+    </script>
 </body>
 </html>
